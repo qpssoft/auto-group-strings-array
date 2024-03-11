@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/qpssoft/auto-group-strings-array/issues"
   },
-  "homepage": "https://github.com/qpssoft/auto-group-strings-array#readme"
+  "homepage": "https://github.com/qpssoft/auto-group-strings-array#readme",
+  "dependencies": {
+    "auto-group-strings": "^1.1.0"
+  }
 }
