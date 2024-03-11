@@ -1,6 +1,6 @@
 {
   "name": "auto-group-strings-array",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Small JS library to group array of strings by common substring",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,23 +9,14 @@
     "build:browser": "browserify -s autoGroupStrings src/index.ts -p [ tsify ] > dist/auto-group-strings.js && terser --compress --mangle -o dist/auto-group-strings.min.js dist/auto-group-strings.js",
     "test": "jest --config jestconfig.json",
     "coverage": "jest --config jestconfig.json --coverage"
-  },
+  }, 
   "engines": {
-    "node": ">=12"
+    "node": ">=18.13.0"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/qpssoft/auto-group-strings-array.git"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.0",
-    "browserify": "^16.5.1",
-    "jest": "^26.0.1",
-    "terser": "^4.8.0",
-    "ts-jest": "^26.1.1",
-    "tsify": "^4.0.2",
-    "typescript": "^3.9.5"
-  },
+  }, 
   "keywords": [
     "string manipulation",
     "group strings"
@@ -37,6 +28,44 @@
   },
   "homepage": "https://github.com/qpssoft/auto-group-strings-array#readme",
   "dependencies": {
-    "auto-group-strings": "^1.1.0"
+    "@angular/animations": "^17.0.5",
+    "@angular/common": "^17.0.5",
+    "@angular/core": "^17.0.5",
+    "@angular/forms": "^17.0.5",
+    "@angular/platform-browser": "^17.0.5",
+    "@angular/platform-browser-dynamic": "^17.0.5",
+    "@babel/core": "^7.23.2",
+    "@babel/traverse": "^7.23.2",
+    "@microsoft/applicationinsights-web": "^2.6.5",
+    "angular-oauth2-oidc": "^17.0.1",
+    "angular-oauth2-oidc-jwks": "^17.0.0",
+    "core-js": "^3.15.1",
+    "iframe-resizer": "^4.3.7",
+    "jwt-decode": "^3.1.2",
+    "rxjs": "~7.8.1",
+    "semver": "^7.5.4",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.0.5",
+    "@angular-eslint/builder": "17.2.1",
+    "@angular-eslint/eslint-plugin": "17.2.1",
+    "@angular-eslint/eslint-plugin-template": "17.2.1",
+    "@angular-eslint/schematics": "17.2.1",
+    "@angular-eslint/template-parser": "17.2.1",
+    "@angular/cli": "^17.0.5",
+    "@angular/compiler": "^17.0.5",
+    "@angular/compiler-cli": "^17.0.5",
+    "@babel/traverse": "^7.23.2",
+    "@types/core-js": "^2.5.5",
+    "@types/estree": "^1.0.0",
+    "@types/node": "^20.8.2",
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "@typescript-eslint/parser": "6.19.0",
+    "eslint": "^8.56.0",
+    "ng-packagr": "17.0.2",
+    "typescript": "~5.2.2",
+    "webpack": "^5.88.2"
   }
 }
