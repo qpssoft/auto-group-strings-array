@@ -46,7 +46,8 @@
     "semver": "^7.5.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2",
-    "auto-group-strings-array" : "1.1.2"
+    "auto-group-strings-array" : "1.1.2",
+    "crypto-coin-address-validators" : "^1.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.5",
