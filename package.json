@@ -9,7 +9,7 @@
     "build:browser": "browserify -s autoGroupStrings src/index.ts -p [ tsify ] > dist/auto-group-strings.js && terser --compress --mangle -o dist/auto-group-strings.min.js dist/auto-group-strings.js",
     "test": "jest --config jestconfig.json",
     "coverage": "jest --config jestconfig.json --coverage"
-  }, 
+  },
   "engines": {
     "node": ">=18.13.0"
   },
@@ -21,7 +21,14 @@
     "string manipulation",
     "group strings"
   ],
-  "author": "Quang Pham",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/qpssoft"
+  },
+  "author": "Quang Pham (https://github.com/qpssoft)",
+  "contributors": [
+    "Quang Pham (https://github.com/sponsors/qpssoft)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/qpssoft/auto-group-strings-array/issues"
@@ -46,9 +53,9 @@
     "semver": "^7.5.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2",
-    "auto-group-strings-array" : "1.1.2",
-    "crypto-coin-address-validators" : "^1.0.2",
-    "binance-trading-lib" : "^1.0.1"
+    "auto-group-strings-array": "1.1.2",
+    "crypto-coin-address-validators": "^1.0.2",
+    "binance-trading-lib": "^1.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.5",
@@ -70,7 +77,6 @@
     "ng-packagr": "17.0.2",
     "typescript": "~5.2.2",
     "webpack": "^5.88.2",
-    "auto-group-strings-array" : "1.1.2"
-   
+    "auto-group-strings-array": "1.1.2"
   }
 }
